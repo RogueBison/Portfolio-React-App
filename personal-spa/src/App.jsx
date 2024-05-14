@@ -6,15 +6,15 @@ import "./index.css";
 function App() {
   return (
     <>
-      <div className="page-container bg-gray-900 text-neutral-50 min-h-screen text-md">
+      <div className="page-container bg-slate-900 text-neutral-50 min-h-screen text-lg bg-[url('./src/assets/always-grey.png')] bg-center bg-fixed">
+        <Navbar />
         <div className="container mx-auto">
-          <Navbar />
           <section
             id="main"
             className="min-h-screen flex flex-row w-full gap-24 justify-center items-center"
           >
             <header className=" w-6/12">
-              <h1 className="text-5xl mb-10 font-bold">
+              <h1 className="text-5xl mb-10 font-bold drop-shadow-lg">
                 Hi, I'm Martin Alexander
               </h1>
               <a
@@ -25,21 +25,26 @@ function App() {
                 {"Download CV (PDF)"}
               </a>
               <article className="mt-10">
-                <p className="font-medium">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a
-                  ipsum eget lacus suscipit sollicitudin. Nam vitae lorem velit.
-                  Integer quis commodo sem. Praesent tincidunt eros sit amet
-                  ornare. Duis pretium, urna sit amet condimentum luctus, est
-                  nisi commodo ex, libero nibh id magna. Duis euismod sem odio,
-                  eget euismod.
+                <p className="drop-shadow-sm">
+                  I am a Web Developer with knowledge of both Frontend and
+                  Backend application development based in Cumbernauld,
+                  Scotland. I have recently completed my BSc (Hons) in Web and
+                  Mobile Development at UWS Paisley, and I have full confidence
+                  that I will achieve a first class award.
+                </p>
+                <p className="mt-5">
+                  Throughout my studies at UWS, I gained invaluable experience
+                  with building full-stack, data driven applicatons using a wide
+                  array of various programming languages, frameworks and
+                  libraries.
                 </p>
               </article>
             </header>
-            <aside className="">
+            <aside>
               <img
                 src="./src/assets/headshot.jpg"
                 alt="martin alexander headshot"
-                className="rounded-lg h-80 shadow-md shadow-slate-950"
+                className="rounded-lg h-80 drop-shadow-lg shadow-slate-950"
               />
               <div className="other-links">
                 <ul className="flex flex-row gap-8 mt-4 justify-evenly">
