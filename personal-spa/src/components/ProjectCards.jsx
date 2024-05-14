@@ -7,7 +7,7 @@ function ProjectCards() {
         className="flex flex-row bg-gray-800 items-center h-72 max-w-6xl mt-16 rounded-lg drop-shadow-md"
       >
         <img
-          src="./src/assets/reporting_app.png"
+          src="/reporting_app.png"
           alt="project 1 reporting react app"
           className="rounded-l-lg max-h-72"
         />
