@@ -19,7 +19,7 @@ function App() {
               </h1>
               <a
                 className="bg-blue-600 py-4 px-8 rounded-md uppercase font-semibold hover:shadow-md hover:shadow-slate-950 hover:bg-blue-500 transition ease-in-out delay-80"
-                href="/cv_martin_alexander.pdf"
+                href="./src/assets/cv_martin_alexander.pdf"
                 download
               >
                 {"Download CV (PDF)"}
