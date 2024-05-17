@@ -1,16 +1,17 @@
+import "flowbite";
 function Navbar() {
   return (
     <>
-      <nav className="flex justify-between items-center tracking-wide uppercase text-neutral-100 space-x-6 xl:space-x-12 z-50 py-4 px-4 sm:px-6 md:px-12 lg:px-24 top-0 sticky bg-slate-900 bg-[url('/always-grey.png')] bg-center bg-fixed">
+      <nav className="flex flex-wrap lg:flex-row justify-between items-center tracking-wide uppercase text-neutral-100 xl:space-x-12 z-50 p-4 sm:px-6 md:px-12 lg:px-24 top-0 sticky bg-slate-900 bg-[url('/always-grey.png')] bg-center bg-fixed">
         <h1 className="font-bold sm:text-2xl drop-shadow-lg">
           Martin Alexander
         </h1>
         <button
           data-collapse-toggle="navbar-default"
-          type="button"
-          className="inline-flex items-center p-2 w-12 h-12 justify-center text-sm bg-blue-600 rounded-lg lg:hidden hover:shadow-md hover:shadow-slate-950 hover:bg-blue-500 transition ease-in-out delay-80 focus:bg-slate-900 focus:text-neutral-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
           aria-controls="navbar-default"
           aria-expanded="false"
+          type="button"
+          className="inline-flex items-center p-2 w-12 h-12 justify-center text-sm bg-blue-600 rounded-lg lg:hidden hover:shadow-md hover:shadow-slate-950 hover:bg-blue-500 transition ease-in-out delay-80 focus:bg-slate-900 focus:text-neutral-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           <span className="sr-only">Open main menu</span>
           <svg
@@ -29,22 +30,25 @@ function Navbar() {
             />
           </svg>
         </button>
-        <div className="hidden lg:flex space-x-12 h-10">
+        <div
+          className="hidden w-full lg:block lg:w-auto lg:flex lg:space-x-12 lg:h-10"
+          id="navbar-default"
+        >
           <a
             href="#intro"
-            className="flex w-52 bg-blue-600 justify-center items-center rounded-md font-bold hover:shadow-md hover:shadow-slate-950 hover:bg-blue-500 transition ease-in-out delay-80"
+            className="flex w-full mt-4 lg:mt-0 lg:w-52 h-10 lg:h-inherit bg-blue-600 justify-center items-center rounded-md font-bold hover:shadow-md hover:shadow-slate-950 hover:bg-blue-500 transition ease-in-out delay-80"
           >
             Intro
           </a>
           <a
             href="#portfolio"
-            className="flex w-52 bg-blue-600 justify-center items-center rounded-md font-bold hover:shadow-md hover:shadow-slate-950 hover:bg-blue-500 transition ease-in-out delay-80"
+            className="flex w-full mt-4 lg:mt-0 lg:w-52 h-10 lg:h-inherit bg-blue-600 justify-center items-center rounded-md font-bold hover:shadow-md hover:shadow-slate-950 hover:bg-blue-500 transition ease-in-out delay-80"
           >
             Portfolio
           </a>
           <a
             href="#contact"
-            className="flex w-52 bg-blue-600 justify-center items-center rounded-md font-bold hover:shadow-md hover:shadow-slate-950 hover:bg-blue-500 transition ease-in-out delay-80"
+            className="flex w-full mt-4 lg:mt-0  lg:w-52 h-10 lg:h-inherit bg-blue-600 justify-center items-center rounded-md font-bold hover:shadow-md hover:shadow-slate-950 hover:bg-blue-500 transition ease-in-out delay-80"
           >
             Contact
           </a>
