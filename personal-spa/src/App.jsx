@@ -14,7 +14,7 @@ function App() {
             className="min-h-screen flex flex-col sm:flex-row w-full gap-8 md:gap-24 justify-center items-center"
           >
             <header className="sm:w-1/2 sm:block flex flex-col items-center justify-center mx-8">
-              <h1 className="text-3xl sm:text-5xl mb-6 font-bold drop-shadow-lg ">
+              <h1 className="text-2xl sm:text-3xl md:text-5xl mb-6 font-bold drop-shadow-lg ">
                 Hi, I'm Martin Alexander
               </h1>
               <a
@@ -44,7 +44,9 @@ function App() {
               <img
                 src="/headshot.jpg"
                 alt="martin alexander headshot"
-                className="rounded-lg h-80 drop-shadow-lg shadow-slate-950"
+                height={320}
+                width={233}
+                className="rounded-lg drop-shadow-lg shadow-slate-950"
               />
               <div className="other-links">
                 <ul className="flex flex-row gap-8 mt-4 justify-evenly">
