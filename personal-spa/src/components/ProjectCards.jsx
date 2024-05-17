@@ -3,7 +3,7 @@ function ProjectCards() {
     <>
       <section
         id="portfolio"
-        className="min-h-screen flex flex-col justify-center items-center mt-32 lg:m-0"
+        className="md:min-h-screen flex flex-col justify-center items-center mt-32 lg:m-0"
       >
         <h2 className="text-4xl font-bold drop-shadow-lg">Portfolio</h2>
         <div

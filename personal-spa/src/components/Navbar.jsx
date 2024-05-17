@@ -1,7 +1,7 @@
 function Navbar() {
   return (
     <>
-      <nav className="flex justify-between items-center tracking-wide uppercase text-neutral-100 space-x-6 xl:space-x-12 z-50 py-4 px-4 sm:px-6 md:px-12 lg:px-24 top-0 sticky bg-slate-900 bg-[url('./src/assets/always-grey.png')] bg-center bg-fixed">
+      <nav className="flex justify-between items-center tracking-wide uppercase text-neutral-100 space-x-6 xl:space-x-12 z-50 py-4 px-4 sm:px-6 md:px-12 lg:px-24 top-0 sticky bg-slate-900 bg-[url('/always-grey.png')] bg-center bg-fixed">
         <h1 className="font-bold sm:text-2xl drop-shadow-lg">
           Martin Alexander
         </h1>
@@ -31,7 +31,7 @@ function Navbar() {
         </button>
         <div className="hidden lg:flex space-x-12 h-10">
           <a
-            href="#main"
+            href="#intro"
             className="flex w-52 bg-blue-600 justify-center items-center rounded-md font-bold hover:shadow-md hover:shadow-slate-950 hover:bg-blue-500 transition ease-in-out delay-80"
           >
             Intro

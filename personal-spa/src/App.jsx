@@ -6,11 +6,11 @@ import "./index.css";
 function App() {
   return (
     <>
-      <div className="page-container bg-slate-900 text-neutral-50 min-h-screen text-lg bg-[url('./src/assets/always-grey.png')] bg-center bg-fixed">
+      <div className="page-container bg-slate-900 text-neutral-50 min-h-screen text-lg bg-[url('/always-grey.png')] bg-center bg-fixed">
         <Navbar />
         <div className="container mx-auto">
           <section
-            id="main"
+            id="intro"
             className="min-h-screen flex flex-col sm:flex-row w-full gap-8 md:gap-24 justify-center items-center"
           >
             <header className="sm:w-1/2 sm:block flex flex-col items-center justify-center mx-8">
