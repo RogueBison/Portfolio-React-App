@@ -8,13 +8,13 @@ function Navbar() {
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          class="inline-flex items-center p-2 w-12 h-12 justify-center text-sm bg-blue-600 rounded-lg lg:hidden hover:shadow-md hover:shadow-slate-950 hover:bg-blue-500 transition ease-in-out delay-80 focus:bg-slate-900 focus:text-neutral-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="inline-flex items-center p-2 w-12 h-12 justify-center text-sm bg-blue-600 rounded-lg lg:hidden hover:shadow-md hover:shadow-slate-950 hover:bg-blue-500 transition ease-in-out delay-80 focus:bg-slate-900 focus:text-neutral-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
           aria-controls="navbar-default"
           aria-expanded="false"
         >
-          <span class="sr-only">Open main menu</span>
+          <span className="sr-only">Open main menu</span>
           <svg
-            class="w-8 h-8"
+            className="w-8 h-8"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -22,9 +22,9 @@ function Navbar() {
           >
             <path
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M1 1h15M1 7h15M1 13h15"
             />
           </svg>

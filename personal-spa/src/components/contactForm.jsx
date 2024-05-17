@@ -73,7 +73,7 @@ function ContactForm() {
           Let's get in touch!
         </h2>
         <form
-          className="pt-16 drop-shadow-md mb-12 lg:mb-0 w-10/12 lg:w-full lg:max-w-6xl flex flex-col lg:block"
+          className="pt-16 drop-shadow-md lg:mb-0 w-10/12 lg:w-full lg:max-w-6xl flex flex-col lg:block"
           id="contact-form"
           onSubmit={handleSubmit(sendEmail)}
           noValidate
