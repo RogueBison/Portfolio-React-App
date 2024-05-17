@@ -11,7 +11,7 @@ function App() {
         <div className="container mx-auto">
           <section
             id="intro"
-            className="min-h-screen flex flex-col sm:flex-row w-full gap-8 md:gap-24 justify-center items-center"
+            className="sm:min-h-screen flex flex-col sm:flex-row w-full gap-8 md:gap-24 justify-center items-center"
           >
             <header className="sm:w-1/2 sm:block flex flex-col items-center justify-center mx-8">
               <h1 className="text-2xl sm:text-3xl md:text-5xl mb-6 font-bold drop-shadow-lg ">

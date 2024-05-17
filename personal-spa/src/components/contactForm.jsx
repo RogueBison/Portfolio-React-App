@@ -67,13 +67,13 @@ function ContactForm() {
     <>
       <section
         id="contact"
-        className="min-h-screen flex flex-col justify-center items-center mt-32 lg:m-0"
+        className="sm:min-h-screen flex flex-col justify-center items-center mt-32"
       >
         <h2 className="text-4xl font-bold drop-shadow-md">
           Let's get in touch!
         </h2>
         <form
-          className="pt-16 drop-shadow-md lg:mb-0 w-10/12 lg:w-full lg:max-w-6xl flex flex-col lg:block"
+          className="pt-16 drop-shadow-md w-10/12 lg:w-full lg:max-w-6xl flex flex-col lg:block"
           id="contact-form"
           onSubmit={handleSubmit(sendEmail)}
           noValidate
