@@ -11,20 +11,20 @@ function App() {
         <div className="container mx-auto">
           <section
             id="main"
-            className="min-h-screen flex flex-row w-full gap-24 justify-center items-center"
+            className="min-h-screen flex flex-col sm:flex-row w-full gap-8 md:gap-24 justify-center items-center"
           >
-            <header className=" w-6/12">
-              <h1 className="text-5xl mb-10 font-bold drop-shadow-lg">
+            <header className="sm:w-1/2 sm:block flex flex-col items-center justify-center mx-8">
+              <h1 className="text-3xl sm:text-5xl mb-6 font-bold drop-shadow-lg ">
                 Hi, I'm Martin Alexander
               </h1>
               <a
-                className="bg-blue-600 py-4 px-8 rounded-md uppercase font-semibold hover:shadow-md hover:shadow-slate-950 hover:bg-blue-500 transition ease-in-out delay-80"
+                className="bg-blue-600 py-2 px-8 inline-block rounded-md uppercase font-semibold hover:shadow-md hover:shadow-slate-950 hover:bg-blue-500 transition ease-in-out delay-80"
                 href="/cv_martin_alexander.pdf"
                 download
               >
-                {"Download CV (PDF)"}
+                Download CV (PDF)
               </a>
-              <article className="mt-10">
+              <article className="mt-6">
                 <p className="drop-shadow-sm">
                   I am a Web Developer with knowledge of both Frontend and
                   Backend application development based in Cumbernauld,
@@ -81,18 +81,8 @@ function App() {
               </div>
             </aside>
           </section>
-          <section
-            id="portfolio"
-            className="min-h-screen flex flex-col justify-center items-center"
-          >
-            <ProjectCards />
-          </section>
-          <section
-            id="contact"
-            className="min-h-screen flex flex-col justify-center items-center"
-          >
-            <ContactForm />
-          </section>
+          <ProjectCards />
+          <ContactForm />
         </div>
       </div>
     </>

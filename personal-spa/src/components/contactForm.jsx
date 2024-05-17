@@ -65,10 +65,15 @@ function ContactForm() {
 
   return (
     <>
-      <h2 className="text-4xl font-bold drop-shadow-md">Let's get in touch!</h2>
-      <div className="w-full max-w-6xl">
+      <section
+        id="contact"
+        className="min-h-screen flex flex-col justify-center items-center mt-40 lg:m-0"
+      >
+        <h2 className="text-4xl font-bold drop-shadow-md">
+          Let's get in touch!
+        </h2>
         <form
-          className="pt-16 drop-shadow-md"
+          className="pt-16 drop-shadow-md w-10/12 lg:w-full lg:max-w-6xl flex flex-col lg:block"
           id="contact-form"
           onSubmit={handleSubmit(sendEmail)}
           noValidate
@@ -161,7 +166,7 @@ function ContactForm() {
             {alertInfo.message}
             <button
               type="button"
-              className="btn-close"
+              className="bg-blue-600 py-2 px-16 rounded-md uppercase font-semibold hover:shadow-md hover:shadow-slate-950 hover:bg-blue-500 transition ease-in-out delay-80"
               data-bs-dismiss="alert"
               aria-label="Close"
               onClick={() =>
@@ -170,7 +175,7 @@ function ContactForm() {
             ></button>
           </div>
         )}
-      </div>
+      </section>
     </>
   );
 }
