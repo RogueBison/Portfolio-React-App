@@ -67,7 +67,7 @@ function ContactForm() {
     <>
       <section
         id="contact"
-        className="sm:min-h-screen flex flex-col justify-center items-center mt-32"
+        className="sm:min-h-screen flex flex-col justify-center items-center mt-32 mb-12 lg:mb-0"
       >
         <h2 className="text-4xl font-bold drop-shadow-md">
           Let's get in touch!
