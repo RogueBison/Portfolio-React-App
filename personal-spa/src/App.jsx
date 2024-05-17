@@ -15,7 +15,7 @@ function App() {
           >
             <header className="sm:w-1/2 sm:block flex flex-col items-center justify-center mx-8">
               <h1 className="text-2xl sm:text-3xl md:text-5xl mb-6 font-bold drop-shadow-lg ">
-                Hi, I'm Martin Alexander
+                Hi, I&apos;m Martin Alexander
               </h1>
               <a
                 className="bg-blue-600 py-2 px-8 inline-block rounded-md uppercase font-semibold hover:shadow-md hover:shadow-slate-950 hover:bg-blue-500 transition ease-in-out delay-80"
