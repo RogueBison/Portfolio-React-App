@@ -1,9 +1,23 @@
+/* eslint-disable react/prop-types */
 import ContactForm from "./components/contactForm";
 import ProjectCards from "./components/ProjectCards";
 import Navbar from "./components/Navbar";
 import "./index.css";
 
-function App() {
+function App(props) {
+  const projectList = props.projects?.map((project) => (
+    <ProjectCards
+      id={project.id}
+      path={project.path}
+      name={project.name}
+      url={project.url}
+      location={project.location}
+      description={project.description}
+      key={project.id}
+      alt={project.name}
+    />
+  ));
+
   return (
     <>
       <div className="page-container bg-slate-900 text-neutral-50 min-h-screen text-lg bg-[url('/always-grey.png')] bg-center bg-fixed">
@@ -83,7 +97,14 @@ function App() {
               </div>
             </aside>
           </section>
-          <ProjectCards />
+          {/* <ProjectCards /> */}
+          <section
+            id="portfolio"
+            className="sm:min-h-screen flex flex-col justify-center items-center mt-32 lg:m-0"
+          >
+            <h2 className="text-4xl font-bold drop-shadow-lg">Portfolio</h2>
+            {projectList}
+          </section>
           <ContactForm />
         </div>
       </div>

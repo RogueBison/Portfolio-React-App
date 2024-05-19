@@ -1,10 +1,8 @@
-/* import { useRef } from "react"; */
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 
 function ContactForm() {
-  /* const form = useRef(); */
   const {
     register,
     handleSubmit,
@@ -29,18 +27,18 @@ function ContactForm() {
   };
 
   const sendEmail = async (formData) => {
-    e.preventDefault();
-
     const { from_name, email, message } = formData;
 
-    // Define template params
-    const templateParams = {
-      from_name,
-      email,
-      message,
-    };
-
     try {
+      setDisabled(true);
+
+      // Define template params
+      const templateParams = {
+        from_name,
+        email,
+        message,
+      };
+
       await emailjs.send(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
@@ -70,7 +68,7 @@ function ContactForm() {
         className="sm:min-h-screen flex flex-col justify-center items-center mt-32"
       >
         <h2 className="text-4xl font-bold drop-shadow-md">
-          Let's get in touch!
+          Let&apos;s get in touch!
         </h2>
         <form
           className="pt-16 pb-12 sm:pb-0 drop-shadow-md w-10/12 lg:w-full lg:max-w-6xl flex flex-col lg:block"
@@ -160,19 +158,21 @@ function ContactForm() {
         </form>
         {alertInfo.display && (
           <div
-            className={`alert alert-${alertInfo.type} alert-dismissible mt-5`}
+            className={`alert alert-${alertInfo.type} alert-dismissible mt-12 text-lime-500 font-bold uppercase`}
             role="alert"
           >
             {alertInfo.message}
             <button
               type="button"
-              className="bg-blue-600 py-2 px-16 rounded-md uppercase font-semibold hover:shadow-md hover:shadow-slate-950 hover:bg-blue-500 transition ease-in-out delay-80"
+              className="text-neutral-50 ml-6 bg-blue-600 py-2 px-16 rounded-md uppercase font-semibold hover:shadow-md hover:shadow-slate-950 hover:bg-blue-500 transition ease-in-out delay-80"
               data-bs-dismiss="alert"
               aria-label="Close"
               onClick={() =>
                 setAlertInfo({ display: false, message: "", type: "" })
               } // Clear the alert when close button is clicked
-            ></button>
+            >
+              Close
+            </button>
           </div>
         )}
       </section>
