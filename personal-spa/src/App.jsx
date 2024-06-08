@@ -23,7 +23,7 @@ function App(props) {
       <div className="page-container bg-slate-900 text-neutral-50 min-h-screen text-lg bg-[url('/always-grey.png')] bg-center bg-fixed">
         <Navbar />
         <div className="container mx-auto">
-          <section
+          <main
             id="intro"
             className="sm:min-h-screen flex flex-col sm:flex-row w-full gap-8 md:gap-24 justify-center items-center"
           >
@@ -42,9 +42,9 @@ function App(props) {
                 <p className="drop-shadow-sm">
                   I am a Web Developer with knowledge of both Frontend and
                   Backend application development based in Cumbernauld,
-                  Scotland. I have recently completed my BSc (Hons) in Web and
-                  Mobile Development at UWS Paisley, and I have full confidence
-                  that I will achieve a first class award.
+                  Scotland. I have recently completed a Web and Mobile
+                  Development course at UWS Paisley with a First-Class Honours
+                  degree.
                 </p>
                 <p className="mt-5">
                   Throughout my studies at UWS, I gained invaluable experience
@@ -96,7 +96,7 @@ function App(props) {
                 </ul>
               </div>
             </aside>
-          </section>
+          </main>
           {/* <ProjectCards /> */}
           <section
             id="portfolio"
