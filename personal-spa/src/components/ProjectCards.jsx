@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { Link } from "react-router-dom";
 function ProjectCards(props) {
   return (
     <>
@@ -17,12 +18,13 @@ function ProjectCards(props) {
             {props.name}
           </h3>
           <p className="mb-4 drop-shadow-sm">{props.description}</p>
-          <a
+          <Link
+            key={props.id}
+            to={`${props.url}`}
             className="flex flex-row justify-center lg:inline-block bg-blue-600 py-2 px-8 rounded-md uppercase font-semibold hover:shadow-md hover:shadow-slate-950 hover:bg-blue-500 transition ease-in-out delay-80"
-            href={props.url}
           >
             {props.location}
-          </a>
+          </Link>
         </div>
       </div>
     </>
