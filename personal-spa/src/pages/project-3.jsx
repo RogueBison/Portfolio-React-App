@@ -25,6 +25,13 @@ export default function Project3() {
             </div>
           </div>
           <article className="mt-14">
+            <iframe
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FGqOvmQThGYJhAKggaFvhFm%2F%2522The-Online-Bookstore%2522-%257C-Full-Stack-MERN-App%3Ft%3DeLJv8qvn6x0YRLCz-1"
+              allowFullScreen
+              height="350"
+              width="550"
+              className="float-right ml-8 rounded-lg border-2"
+            />
             <p className="drop-shadow-sm">
               <span className="italic">&quot;The Online Bookstore&quot;</span>{" "}
               is intended to be an E-Commerce book store inspired by similar
@@ -47,7 +54,7 @@ export default function Project3() {
             <p className="mt-4">
               The Frontend React application was deployed on Vercel, with the
               Backend Express API being deployed on Render.{" "}
-              <strong>
+              <strong className="italic">
                 The free instance tier used for the backend will spin down after
                 periods of inactivity, which can delay requests by 50 seconds or
                 more.
@@ -76,7 +83,7 @@ export default function Project3() {
                   functionality.
                 </li>
                 <li className="py-2">
-                  <strong>File Uploading</strong>
+                  <strong>File Uploads</strong>
                 </li>
                 <li className="py-2">
                   <strong>
@@ -100,7 +107,6 @@ export default function Project3() {
                 <li className="py-2">Fetch API</li>
                 <li className="py-2">Context API</li>
               </ul>
-
               <ul className="list-disc">
                 <li className="py-2">Mongoose</li>
                 <li className="py-2">bcrypt</li>
@@ -113,33 +119,15 @@ export default function Project3() {
                 <li className="py-2">validator</li>
               </ul>
               <ul className="list-disc">
-                <li className="py-2">cors</li>
                 <li className="py-2">dotenv</li>
+                <li className="py-2">cors</li>
                 <li className="py-2">jsonwebtoken</li>
+              </ul>
+              <ul className="list-disc">
+                <li className="py-2">multer</li>
               </ul>
             </div>
           </article>
-          <div className="grid grid-cols-2 gap-6 mt-14">
-            <img
-              src="/portfolio1.PNG"
-              className="rounded-lg drop-shadow-lg shadow-slate-950"
-            />
-
-            <img
-              src="/portfolio2.PNG"
-              className="rounded-lg drop-shadow-lg shadow-slate-950"
-            />
-
-            <img
-              src="/portfolio3.PNG"
-              className="rounded-lg drop-shadow-lg shadow-slate-950"
-            />
-
-            <img
-              src="/portfolio4.PNG"
-              className="rounded-lg drop-shadow-lg shadow-slate-950"
-            />
-          </div>
         </div>
       </div>
     </>
