@@ -76,6 +76,9 @@ export default function Project3() {
                   functionality.
                 </li>
                 <li className="py-2">
+                  <strong>File Uploading</strong>
+                </li>
+                <li className="py-2">
                   <strong>
                     Organize and present products based on various criteria
                   </strong>{" "}
@@ -102,6 +105,7 @@ export default function Project3() {
                 <li className="py-2">Mongoose</li>
                 <li className="py-2">bcrypt</li>
                 <li className="py-2">dotenv</li>
+                <li className="py-2">multer</li>
               </ul>
               <ul className="list-disc">
                 <li className="py-2">nodemon</li>
