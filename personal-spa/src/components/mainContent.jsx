@@ -6,7 +6,7 @@ export default function MainContent() {
   const projects = [
     {
       id: "project-0",
-      path: "/mernapp.png",
+      path: "/project0/portfolio1.PNG",
       name: "The Online Bookstore",
       location: "Learn More",
       url: "/the-online-bookstore",
@@ -24,6 +24,24 @@ export default function MainContent() {
     },
     {
       id: "project-2",
+      path: "/project2/laravel1.png",
+      name: "Laravel CRUD App",
+      location: "View Github Repo",
+      url: "/laravel",
+      description:
+        "An Assessment project that required me to develop a CRUD web app using the PHP framework Laravel.",
+    },
+    {
+      id: "project-3",
+      path: "/project3/.netmvc0.png",
+      name: "ASP.NET Core 6 MVC CRUD App",
+      location: "View Github Repo",
+      url: "/asp.net-core6-mvc",
+      description:
+        "Assessment project that required me to develop a CRUD web app using the C# framework ASP.NET Core MVC.",
+    },
+    {
+      id: "project-4",
       path: "/reactportfolio.png",
       name: "Frontend React Portfolio App",
       location: "View Github Repo",
@@ -32,7 +50,7 @@ export default function MainContent() {
         "Frontend Portfolio app designed with Figma, then built using the ReactJS UI library and Tailwind CSS. 'EmailJS' and the 'react-hook-form' library were used to implement the 'Contact Form' component. I used this project as an opportunity to learn a CSS Framework, as I heard of it them before but never used any, only ever using vanilla CSS.",
     },
     {
-      id: "project-3",
+      id: "project-5",
       path: "/reshapehr.png",
       name: "Reshape HR",
       url: "https://reshapehr.com/",
@@ -40,15 +58,6 @@ export default function MainContent() {
       description:
         "Complete design overhaul of the HR with EA WordPress.org website to coincide with the rebranding of the company to 'Reshape HR Limited'. Please view the 'Experience' section on my LinkedIn page for more details.",
     },
-    /* {
-      id: "project-4",
-      path: "/laravelapp.png",
-      name: "Full Stack Laravel App",
-      location: "View Github Repo",
-      url: "https://github.com/RogueBison/Laravel-app",
-      description:
-        "An assessment project required me to develop a full-stack web app using the Laravel PHP framework.",
-    }, */
   ];
 
   const projectList = projects.map((project) => (

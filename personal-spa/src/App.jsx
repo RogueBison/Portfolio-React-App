@@ -2,6 +2,8 @@
 import "./index.css";
 import Navbar from "./components/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Project0 from "./pages/project-0";
+import Project2 from "./pages/project-2";
 import Project3 from "./pages/project-3";
 import MainContent from "./components/mainContent";
 import ScrollToTop from "./components/scrollToTop";
@@ -17,7 +19,9 @@ function App() {
               <Routes>
                 <Route index element={<MainContent />} />
                 <Route path="/" element={<mainContent />} />
-                <Route path="/the-online-bookstore" element={<Project3 />} />
+                <Route path="/the-online-bookstore" element={<Project0 />} />
+                <Route path="/laravel" element={<Project2 />} />
+                <Route path="/asp.net-core6-mvc" element={<Project3 />} />
               </Routes>
             </div>
           </ScrollToTop>

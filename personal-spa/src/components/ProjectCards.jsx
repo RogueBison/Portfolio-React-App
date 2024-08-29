@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
-function ProjectCards(props) {
+export default function ProjectCards(props) {
   return (
     <>
       <div
@@ -10,10 +10,11 @@ function ProjectCards(props) {
         <img
           src={props.path}
           alt={props.alt}
-          className="rounded-l-lg w-full max-h-72"
+          loading="lazy"
+          className="rounded-l-lg h-72 w-full object-cover lg:w-96"
         />
 
-        <div className="p-8">
+        <div className="px-12">
           <h3 className="font-semibold text-xl mb-2 drop-shadow-lg">
             {props.name}
           </h3>
@@ -30,5 +31,3 @@ function ProjectCards(props) {
     </>
   );
 }
-
-export default ProjectCards;
