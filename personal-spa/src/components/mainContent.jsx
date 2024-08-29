@@ -29,7 +29,7 @@ export default function MainContent() {
       location: "View Github Repo",
       url: "/laravel",
       description:
-        "An Assessment project that required me to develop a CRUD web app using the PHP framework Laravel.",
+        "An Assessment project that required me to develop a web app using the PHP framework Laravel. Features include CRUD functionality, alongside authentication and authorisation.",
     },
     {
       id: "project-3",
@@ -38,7 +38,7 @@ export default function MainContent() {
       location: "View Github Repo",
       url: "/asp.net-core6-mvc",
       description:
-        "Assessment project that required me to develop a CRUD web app using the C# framework ASP.NET Core MVC.",
+        "Assessment project that required me to develop a web app using the C# framework ASP.NET Core MVC. Features include CRUD, searching and filtering functionality.",
     },
     {
       id: "project-4",

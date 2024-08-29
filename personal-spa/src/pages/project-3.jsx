@@ -21,37 +21,49 @@ export default function Project3() {
           <article className="mt-14">
             <div className="grid grid-cols-4 gap-2 sm:grid-cols-4 md:gap-6 xl:gap-8">
               <img
-                src="/project0/portfolio1.PNG"
+                src="/project3/.netmvc0.png"
                 loading="lazy"
                 className="rounded-lg md:col-span-2"
               />
 
               <img
-                src="/project0/portfolio2.PNG"
+                src="/project3/.netmvc1.png"
                 loading="lazy"
                 className="rounded-lg md:col-span-2"
               />
 
               <img
-                src="/project0/portfolio3.PNG"
+                src="/project3/.netmvc2.png"
                 loading="lazy"
                 className="rounded-lg md:col-span-2"
               />
 
               <img
-                src="/project0/portfolio4.PNG"
+                src="/project3/.netmvc3.png"
                 loading="lazy"
                 className="rounded-lg md:col-span-2"
               />
 
               <img
-                src="/project0/portfolio4.PNG"
+                src="/project3/.netmvc4.png"
                 loading="lazy"
                 className="rounded-lg md:col-span-2"
               />
 
               <img
-                src="/project0/portfolio4.PNG"
+                src="/project3/.netmvc5.png"
+                loading="lazy"
+                className="rounded-lg md:col-span-2"
+              />
+
+              <img
+                src="/project3/.netmvc6.png"
+                loading="lazy"
+                className="rounded-lg md:col-span-2"
+              />
+
+              <img
+                src="/project3/.netmvc7.png"
                 loading="lazy"
                 className="rounded-lg md:col-span-2"
               />
